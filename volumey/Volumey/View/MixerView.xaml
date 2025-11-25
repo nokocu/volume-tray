@@ -1,0 +1,35 @@
+﻿<ui:Page x:Class="Volumey.View.MixerView"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+         xmlns:ui="http://schemas.modernwpf.com/2019"
+         xmlns:view="clr-namespace:Volumey.View"
+         xmlns:converters="clr-namespace:Volumey.View.Converters"
+         mc:Ignorable="d"
+		 DataContext="{Binding RelativeSource={RelativeSource FindAncestor, 
+									AncestorType={x:Type Window}},
+									Path=DataContext}">
+	<ui:Page.Resources>
+		<converters:DeviceViewPositionToDockConverter x:Key="DeviceViewPositionConverter"/>
+	</ui:Page.Resources>
+	
+	<DockPanel>
+
+		<view:MasterView DockPanel.Dock="{Binding Source={StaticResource AppBehaviorViewModel}, 
+		                                          Path=DeviceViewAtTheBottom, 
+		                                          Converter={StaticResource DeviceViewPositionConverter}}"/>
+
+		<Separator VerticalAlignment="Top"
+				   DockPanel.Dock="{Binding Source={StaticResource AppBehaviorViewModel}, 
+		                                          Path=DeviceViewAtTheBottom, 
+		                                          Converter={StaticResource DeviceViewPositionConverter}}"
+				   Margin="20 5 20 5"/>
+
+		<ScrollViewer
+			Name="ScrollViewer">
+			<view:SessionsListView x:Name="SessionsList"/>
+		</ScrollViewer>
+	</DockPanel>
+	
+</ui:Page>

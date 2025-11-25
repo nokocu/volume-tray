@@ -1,0 +1,330 @@
+﻿<Window x:Class="Volumey.View.MainView"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                  xmlns:ui="http://schemas.modernwpf.com/2019"
+                  xmlns:tb="http://www.hardcodet.net/taskbar"
+                  xmlns:view="clr-namespace:Volumey.View"
+                  xmlns:behaviors="http://schemas.microsoft.com/xaml/behaviors"
+                  xmlns:converters="clr-namespace:Volumey.View.Converters"
+                  xmlns:lc="clr-namespace:Volumey.Localization"
+                  ui:WindowHelper.UseModernWindowStyle="True"
+                  mc:Ignorable="d"
+                  Name="Window"
+                  Title="Volumey"
+                  Width="400"
+                  MinHeight="200"
+                  ui:TitleBar.IsBackEnabled="False"
+                  ui:TitleBar.Style="{StaticResource TitleBarCustom}"
+                  ui:ThemeManager.IsThemeAware="True"
+                  Background="Transparent"
+                  ui:TitleBar.IsIconVisible="False"
+                  MaxWidth="{Binding RelativeSource={RelativeSource Self}, Path=Width}"
+                  MinWidth="{Binding RelativeSource={RelativeSource Self}, Path=Width}"
+                  SizeToContent="Height"
+                  BorderThickness="0"
+                  DataContext="{StaticResource AppBehaviorViewModel}"
+                  Top="{Binding WindowTop, Mode=TwoWay}"
+                  Left="{Binding WindowLeft, Mode=TwoWay}"
+                  IsVisibleChanged="OnIsVisibleChanged"
+                  PreviewKeyDown="OnKeyDown"
+                  Loaded="OnLoaded">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <converters:DeviceIsDefaultToIconConverter x:Key="DeviceIsDefaultToIconConverter"/>
+            <converters:BrushToColorConverter x:Key="BrushToColorConverter"/>
+
+            <ContextMenu
+                x:Key="TrayMenu"
+                HasDropShadow="True"
+                BorderThickness="0"
+                Background="{Binding ElementName=GridContainer, Path=Background}"
+                ui:ControlHelper.CornerRadius="6"
+                Opacity="0.95">
+                <ContextMenu.Resources>
+                    <Style TargetType="{x:Type ui:FontIcon}">
+                        <Setter Property="Margin" Value="0 1 0 0"/>
+                        <Setter Property="RenderTransform">
+                            <Setter.Value>
+                                <ScaleTransform ScaleX="1.1" ScaleY="1.1"/>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                    <Style TargetType="{x:Type MenuItem}">
+                        <Setter Property="FontSize" Value="14"/>
+                        <Setter Property="Padding" Value="6 0 4 0"/>
+                        <Setter Property="Height" Value="29"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center" />
+                    </Style>
+
+                    <!-- override default menu item popup properties -->
+                    <SolidColorBrush x:Key="MenuFlyoutPresenterBackground" Color="{Binding ElementName=GridContainer, Path=Background, Converter={StaticResource BrushToColorConverter}}"/>
+                    <Thickness x:Key="MenuFlyoutPresenterBorderThemeThickness">0</Thickness>
+                </ContextMenu.Resources>
+
+                <MenuItem
+                    Header="{lc:Localization TabHeader_Mixer}"
+                    Foreground="{Binding ElementName=Window, Path=Foreground}"
+                    Command="{Binding TrayMixerCommand}">
+                    <MenuItem.Icon>
+                        <ui:FontIcon Glyph="&#xF4C3;" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem
+                    Header="{lc:Localization TabHeader_Settings}"
+                    Foreground="{Binding ElementName=Window, Path=Foreground}"
+                    Command="{Binding TraySettingsCommand}">
+                    <MenuItem.Icon>
+                        <ui:FontIcon Glyph="&#xE713;" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
+                <MenuItem
+                    Header="{lc:Localization TrayMenu_SoundPanel}"
+                    Foreground="{Binding ElementName=Window, Path=Foreground}"
+                    Command="{Binding SoundControlPanelCommand}">
+                    <MenuItem.Icon>
+                        <ui:FontIcon Glyph="&#xE7F3;" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem
+                    Header="{lc:Localization TrayMenu_SoundSettings}"
+                    Foreground="{Binding ElementName=Window, Path=Foreground}"
+                    Command="{Binding SoundSettingsCommand}">
+                    <MenuItem.Icon>
+                        <ui:FontIcon Glyph="&#xE7F3;" />
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <MenuItem
+                    Foreground="{Binding ElementName=Window, Path=Foreground}"
+                    ItemsSource="{Binding Source={StaticResource DeviceProviderViewModel}, Path=DeviceProvider.ActiveDevices}"
+                    Height="Auto">
+                    <MenuItem.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock 
+                                Text="{lc:Localization TrayMenu_ChangeDevice}"
+                                TextWrapping="WrapWithOverflow"
+                                MaxWidth="200"
+                                LineStackingStrategy="BlockLineHeight"
+                                Padding="0 5 0 5"/>
+                        </DataTemplate>
+                    </MenuItem.HeaderTemplate>
+                    <MenuItem.Icon>
+                        <ui:FontIcon Glyph="&#xF623;"/>
+                    </MenuItem.Icon>
+                    <MenuItem.ItemContainerStyle>
+                        <Style>
+                            <Setter Property="MenuItem.Icon">
+                                <Setter.Value>
+                                    <MultiBinding Converter="{StaticResource DeviceIsDefaultToIconConverter}">
+                                        <Binding/>
+                                        <Binding Source="{StaticResource DeviceProviderViewModel}" Path="DefaultDevice"/>
+                                    </MultiBinding>
+                                </Setter.Value>
+                            </Setter>
+                            <Setter Property="MenuItem.Height" Value="25"/>
+                            <Setter Property="MenuItem.Padding" Value="4 0 4 0"/>
+                            <Setter Property="MenuItem.FontSize" Value="12"/>
+                            <Setter Property="MenuItem.Header" Value="{Binding Master.DeviceFriendlyName}"/>
+                            <Setter Property="MenuItem.Background" Value="{Binding ElementName=GridContainer, Path=Background}"/>
+                            <Setter Property="MenuItem.Command" Value="{Binding Source={StaticResource DeviceProviderViewModel}, Path=SetDefaultDeviceTrayCommand}"/>
+                            <Setter Property="MenuItem.CommandParameter" Value="{Binding}"/>
+                        </Style>
+                    </MenuItem.ItemContainerStyle>
+                </MenuItem>
+
+                <Separator />
+                <MenuItem
+                    Header="{lc:Localization TrayMenu_Exit}"
+                    Foreground="{Binding ElementName=Window, Path=Foreground}"
+                    Command="{Binding TrayExitCommand}">
+                    <MenuItem.Icon>
+                        <ui:FontIcon Glyph="&#xE711;" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </ContextMenu>
+
+            <Style TargetType="{x:Type MenuItem}">
+                <Setter Property="Foreground" Value="{Binding ElementName=Window, Path=Foreground}" />
+                <Setter Property="Padding" Value="4" />
+            </Style>
+
+            <Style TargetType="{x:Type ContextMenu}">
+                <Setter Property="BorderThickness" Value="0" />
+            </Style>
+            
+            <Storyboard x:Key="DisplayFadeIn">
+                <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                 Storyboard.Target="{Binding ElementName=Window}" 
+                                 From="0" To="1" Duration="0:0:.12" />
+            </Storyboard>
+            
+            <Storyboard x:Key="HideFadeOut">
+                <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                                 Storyboard.Target="{Binding ElementName=Window}"
+                                 From="1" To="0" Duration="0:0:.12" />
+            </Storyboard>
+            
+            <converters:WindowVisibilityConverter x:Key="WindowVisibilityConverter" />
+            <converters:TrayTooltipDeviceNameConverter x:Key="TooltipDeviceNameConverter" />
+            <converters:TrayTooltipDeviceVolumeConverter x:Key="TooltipDeviceVolumeConverter" />
+            <converters:TrayTooltipConverter x:Key="TrayTooltipConverter"/>
+            <converters:TrayIconConverter x:Key="TrayIconConverter" />
+            <converters:InverseBoolConverter x:Key="InverseBoolConverter"/>
+
+            <MultiBinding x:Key="TrayTextTooltip"
+                          Converter="{StaticResource TrayTooltipConverter}">
+                <Binding Source="{StaticResource DeviceProviderViewModel}" 
+                         Path="DeviceProvider.NoOutputDevices"/>
+                <Binding Source="{StaticResource DeviceProviderViewModel}"
+                         Path="DefaultDevice.Master"/>
+                <Binding Source="{StaticResource DeviceProviderViewModel}"
+                         Path="DefaultDevice.Master.IsMuted"/>
+                <Binding Source="{StaticResource DeviceProviderViewModel}"
+                         Path="DefaultDevice.Master.Volume"/>
+                <Binding Source="{x:Static lc:TranslationSource.Instance}"
+                         Path="CurrentCulture"/>
+            </MultiBinding>
+
+            <ToolTip
+                x:Key="TrayCustomTooltip"
+                BorderThickness="0"
+                Background="{Binding ElementName=GridContainer, Path=Background}"
+                Foreground="{Binding ElementName=Window, Path=Foreground}"
+                ui:ControlHelper.CornerRadius="4">
+            
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock>
+                        <TextBlock.Text>
+                            <MultiBinding
+                                Converter="{StaticResource TooltipDeviceNameConverter}">
+                                <Binding Source="{StaticResource DeviceProviderViewModel}"
+                                         Path="DeviceProvider.NoOutputDevices" />
+                                <Binding Source="{StaticResource DeviceProviderViewModel}"
+                                         Path="DefaultDevice.Master.DeviceFriendlyName" />
+                                <Binding Source="{x:Static lc:TranslationSource.Instance}"
+                                         Path="CurrentCulture" />
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                    <TextBlock
+                        Name="Volume">
+                        <TextBlock.Text>
+                            <MultiBinding
+                                Converter="{StaticResource TooltipDeviceVolumeConverter}">
+                                <Binding Source="{StaticResource DeviceProviderViewModel}"
+                                         Path="DeviceProvider.NoOutputDevices" />
+                                <Binding Source="{StaticResource DeviceProviderViewModel}"
+                                         Path="DefaultDevice.Master" />
+                                <Binding Source="{StaticResource DeviceProviderViewModel}"
+                                         Path="DefaultDevice.Master.IsMuted" />
+                                <Binding Source="{StaticResource DeviceProviderViewModel}"
+                                         Path="DefaultDevice.Master.Volume" />
+                            </MultiBinding>
+                        </TextBlock.Text>
+                    </TextBlock>
+                </StackPanel>
+            </ToolTip>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <behaviors:Interaction.Triggers>
+
+        <behaviors:EventTrigger
+            EventName="Closing"
+            SourceObject="{Binding ElementName=Window}">
+            <behaviors:InvokeCommandAction Command="{Binding Path=ClosingCommand}"
+                                           PassEventArgsToCommand="True"/>
+        </behaviors:EventTrigger>
+
+        <behaviors:DataTrigger
+            Binding="{Binding ElementName=Window, Path=IsVisible}"
+            Value="False"
+            Comparison="Equal">
+            <behaviors:ControlStoryboardAction Storyboard="{StaticResource HideFadeOut}"/>
+        </behaviors:DataTrigger>
+
+        <behaviors:DataTrigger
+            Binding="{Binding ElementName=Window, Path=IsVisible}"
+            Value="True"
+            Comparison="Equal">
+            <behaviors:ControlStoryboardAction Storyboard="{StaticResource DisplayFadeIn}"/>
+        </behaviors:DataTrigger>
+
+        <behaviors:EventTrigger
+            EventName="Deactivated"
+            SourceObject="{Binding ElementName=Window}">
+            <behaviors:InvokeCommandAction Command="{Binding Path=LostFocusCommand}"/>
+        </behaviors:EventTrigger>
+
+    </behaviors:Interaction.Triggers>
+    
+    <Window.ShowInTaskbar>
+        <Binding Path="DisplayMinimalistic" Converter="{StaticResource InverseBoolConverter}"/>
+    </Window.ShowInTaskbar>
+
+    <Window.Visibility>
+        <Binding Path="WindowIsVisible" Converter="{StaticResource WindowVisibilityConverter}" />
+    </Window.Visibility>
+
+    <Window.Topmost>
+        <Binding Path="AlwaysOnTop"/>
+    </Window.Topmost>
+
+    <Grid
+        Name="GridContainer"
+        Background="{DynamicResource SystemChromeMediumLowColorBrush}"
+        Opacity="0.94">
+        <tb:TaskbarIcon
+            Name="Tray"
+            NoLeftClickDelay="True"
+            LeftClickCommand="{Binding TrayClickCommand}"
+            ContextMenu="{StaticResource TrayMenu}">
+
+            <tb:TaskbarIcon.Icon>
+                <MultiBinding Converter="{StaticResource TrayIconConverter}">
+                    <Binding Source="{StaticResource DeviceProviderViewModel}" Path="DeviceProvider.NoOutputDevices" />
+                    <Binding Source="{StaticResource DeviceProviderViewModel}" Path="DefaultDevice.Master.Volume" />
+                    <Binding Source="{StaticResource DeviceProviderViewModel}" Path="DefaultDevice.Master.IsMuted" />
+                    <Binding Source="{StaticResource ThemeViewModel}" Path="WindowsTheme" />
+                    <Binding Source="{StaticResource AppBehaviorViewModel}" Path="DisplayDeviceIconAtTray"/>
+                    <Binding Source="{StaticResource DeviceProviderViewModel}" Path="DefaultDevice.Master.Icon" />
+                </MultiBinding>
+            </tb:TaskbarIcon.Icon>
+            
+        </tb:TaskbarIcon>
+
+        <ui:NavigationView
+            Name="NavView"
+            PaneDisplayMode="Top"
+            IsSettingsVisible="True"
+            ItemInvoked="NavigationView_OnItemInvoked"
+            IsBackEnabled="False"
+            IsBackButtonVisible="Collapsed">
+
+            <ui:NavigationView.MenuItems>
+
+                <ui:NavigationViewItem
+                    Content="{lc:Localization TabHeader_Mixer}"
+                    Tag="{x:Type view:MixerView}">
+                    <ui:NavigationViewItem.Icon>
+                        <ui:FontIcon Glyph="&#xF4C3;" />
+                    </ui:NavigationViewItem.Icon>
+                </ui:NavigationViewItem>
+
+            </ui:NavigationView.MenuItems>
+
+            <ui:Frame
+                x:Name="ContentFrame"
+                Margin="4 3 0 3"/>
+
+            <ui:NavigationView.Resources>
+                <!-- override default NavigationView resource -->
+                <SolidColorBrush x:Key="NavigationViewTopPaneBackground" Color="Transparent" />
+            </ui:NavigationView.Resources>
+        </ui:NavigationView>
+    </Grid>
+</Window>

@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Settings_VolumeStep" xml:space="preserve">
+    <value>वॉल्यूम समायोजन कदम</value>
+  </data>
+  <data name="Settings_OpenMixer" xml:space="preserve">
+    <value>ओपन वॉल्यूम मिक्सर (हॉटकी)</value>
+  </data>
+  <data name="Settings_IncreaseHotkey" xml:space="preserve">
+    <value>ध्वनि की मात्रा बढ़ाएँ (हॉटकी)</value>
+  </data>
+  <data name="Settings_DecreaseHotkey" xml:space="preserve">
+    <value>ध्वनि की मात्रा कम करें (हॉटकी)</value>
+  </data>
+  <data name="Settings_HeaderHotkeys" xml:space="preserve">
+    <value>हॉटकीज़ (लॉन्च किया गया ऐप आवश्यक)</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>रंग विषय</value>
+  </data>
+  <data name="Settings_HeaderMisc" xml:space="preserve">
+    <value>विविध</value>
+  </data>
+  <data name="Settings_Lang" xml:space="preserve">
+    <value>भाषा</value>
+  </data>
+  <data name="TrayMenu_SoundPanel" xml:space="preserve">
+    <value>ध्वनि नियंत्रण खिड़की</value>
+  </data>
+  <data name="TrayMenu_SoundSettings" xml:space="preserve">
+    <value>ध्वनि सेटिंग</value>
+  </data>
+  <data name="TrayMenu_Exit" xml:space="preserve">
+    <value>ऐप से बाहर निकलें</value>
+  </data>
+  <data name="TabHeader_Mixer" xml:space="preserve">
+    <value>वॉल्यूम मिक्सर</value>
+  </data>
+  <data name="TabHeader_Settings" xml:space="preserve">
+    <value>विन्यास</value>
+  </data>
+  <data name="Settings_MusicApp" xml:space="preserve">
+    <value>आवेदन</value>
+  </data>
+  <data name="Error_Diff" xml:space="preserve">
+    <value>अलग-अलग हॉटकीज़ सेट करें</value>
+  </data>
+  <data name="Error_VolumeReg" xml:space="preserve">
+    <value>हॉटकी पंजीकृत करने में विफल</value>
+  </data>
+  <data name="Error_OpenReg" xml:space="preserve">
+    <value>हॉटकी पंजीकृत करने में विफल</value>
+  </data>
+  <data name="Notification_Yes" xml:space="preserve">
+    <value>ठीक है</value>
+  </data>
+  <data name="Notification_No" xml:space="preserve">
+    <value>नहीं</value>
+  </data>
+  <data name="Notification_Later" xml:space="preserve">
+    <value>बाद में</value>
+  </data>
+  <data name="NotificationMessage_Update" xml:space="preserve">
+    <value>एक अपडेट उपलब्ध है। क्या आप ऐप को अपडेट करना चाहते हैं?</value>
+  </data>
+  <data name="Error_NoDevice" xml:space="preserve">
+    <value>कोई आउटपुट डिवाइस नहीं मिली</value>
+  </data>
+  <data name="Error_F12" xml:space="preserve">
+    <value>F12 ऑपरेटिंग सिस्टम द्वारा आरक्षित है</value>
+  </data>
+  <data name="Error_HotkeyExists" xml:space="preserve">
+    <value>हॉटकी को पहले ही जोड़ा जा चुका है</value>
+  </data>
+  <data name="Settings_AddApp" xml:space="preserve">
+    <value>एप्लिकेशन जोड़ें</value>
+  </data>
+  <data name="Settings_AppsHotkeys" xml:space="preserve">
+    <value>ऐप्स के लिए हॉटकी</value>
+  </data>
+  <data name="Settings_DecreaseDevice" xml:space="preserve">
+    <value>आउटपुट डिवाइस की मात्रा घटाएं</value>
+  </data>
+  <data name="Settings_IncreaseDevice" xml:space="preserve">
+    <value>आउटपुट डिवाइस की मात्रा बढ़ाएँ</value>
+  </data>
+  <data name="Settings_RemoveApp" xml:space="preserve">
+    <value>एप्लिकेशन निकालें</value>
+  </data>
+  <data name="Settings_VolumeLimit" xml:space="preserve">
+    <value>100% होने पर लॉन्च किए गए ऐप की मात्रा को सीमित करें</value>
+  </data>
+  <data name="Settings_Tip" xml:space="preserve">
+    <value>मुझे एक कॉफी खरीदो :)</value>
+  </data>
+  <data name="Settings_AddDevice" xml:space="preserve">
+    <value>डिवाइस जोडे</value>
+  </data>
+  <data name="Settings_DefaultDeviceHotkey" xml:space="preserve">
+    <value>हॉटकी द्वारा डिफ़ॉल्ट डिवाइस बदलें</value>
+  </data>
+  <data name="Settings_Device" xml:space="preserve">
+    <value>आउटपुट डिवाइस</value>
+  </data>
+  <data name="Settings_RemoveDevice" xml:space="preserve">
+    <value>डिवाइस हटाएं</value>
+  </data>
+  <data name="TrayMenu_ChangeDevice" xml:space="preserve">
+    <value>डिफ़ॉल्ट डिवाइस बदलें</value>
+  </data>
+  <data name="Settings_Hotkey" xml:space="preserve">
+    <value>हॉटकी</value>
+  </data>
+  <data name="Settings_BlockHotkeys" xml:space="preserve">
+    <value>पंजीकृत हॉटकी इनपुट को ब्लॉक करें</value>
+  </data>
+  <data name="Settings_Duplicates" xml:space="preserve">
+    <value>डुप्लीकेट हॉटकी की अनुमति दें</value>
+  </data>
+  <data name="Settings_MuteDevice" xml:space="preserve">
+    <value>आउटपुट डिवाइस को म्यूट करें</value>
+  </data>
+  <data name="Settings_DeviceHotkeys" xml:space="preserve">
+    <value>आउटपुट डिवाइस को नियंत्रित करने के लिए हॉटकी</value>
+  </data>
+  <data name="Settings_Popup" xml:space="preserve">
+    <value>पॉप-अप विंडो मोड</value>
+  </data>
+  <data name="Settings_AlwaysTop" xml:space="preserve">
+    <value>हमेशा शिखर पर</value>
+  </data>
+  <data name="Status_Muted" xml:space="preserve">
+    <value>म्यूट किए गए</value>
+  </data>
+  <data name="Notifications_Header" xml:space="preserve">
+    <value>OSD सूचनाएं</value>
+  </data>
+  <data name="Notifications_Horizontal" xml:space="preserve">
+    <value>क्षैतिज इंडेंट</value>
+  </data>
+  <data name="Notifications_Position" xml:space="preserve">
+    <value>पोजीशन</value>
+  </data>
+  <data name="Notifications_Preview" xml:space="preserve">
+    <value>अधिसूचना उदाहरण प्रदर्शित करें</value>
+  </data>
+  <data name="Notifications_Vertical" xml:space="preserve">
+    <value>लंबवत इंडेंट</value>
+  </data>
+  <data name="Notifications_Time" xml:space="preserve">
+    <value>सेकंड में प्रदर्शन समय</value>
+  </data>
+  <data name="Settings_DeviceBottom" xml:space="preserve">
+    <value>नीचे आउटपुट डिवाइस नियंत्रण प्रदर्शित करें</value>
+  </data>
+  <data name="Settings_DeviceIcon" xml:space="preserve">
+    <value>सिस्टम ट्रे पर आउटपुट डिवाइस आइकन प्रदर्शित करें</value>
+  </data>
+  <data name="Settings_WindowBehavior" xml:space="preserve">
+    <value>विंडो व्यवहार</value>
+  </data>
+  <data name="Settings_MixerSettings" xml:space="preserve">
+    <value>वॉल्यूम मिक्सर सेटिंग्स</value>
+  </data>
+  <data name="Settings_LaunchStartup" xml:space="preserve">
+    <value>ऑपरेटिंग सिस्टम स्टार्टअप पर ऐप लॉन्च करें</value>
+  </data>
+  <data name="Settings_StartMenu" xml:space="preserve">
+    <value>ऐप को स्टार्ट मेन्यू में जोड़ें</value>
+  </data>
+  <data name="Settings_ForegroundVolumeUp" xml:space="preserve">
+    <value>अग्रभूमि अनुप्रयोग की मात्रा बढ़ाएँ</value>
+  </data>
+  <data name="Settings_ForegroundVolumeDown" xml:space="preserve">
+    <value>अग्रभूमि आवेदन की मात्रा घटाएं</value>
+  </data>
+  <data name="Settings_LastPosition" xml:space="preserve">
+    <value>अंतिम स्थिति याद रखें</value>
+  </data>
+  <data name="Settings_AddHotkey" xml:space="preserve">
+    <value>हॉटकी जोड़ें</value>
+  </data>
+  <data name="Settings_MediaHotkeys" xml:space="preserve">
+    <value>मीडिया हॉटकी</value>
+  </data>
+  <data name="Settings_MediaReplace" xml:space="preserve">
+    <value>रिप्लेसमेंट हॉटकी</value>
+  </data>
+  <data name="Settings_RemoveHotkey" xml:space="preserve">
+    <value>हॉटकी निकालें</value>
+  </data>
+  <data name="Notifications_ReactAll" xml:space="preserve">
+    <value>सभी वॉल्यूम परिवर्तनों पर प्रदर्शित करें</value>
+  </data>
+</root>

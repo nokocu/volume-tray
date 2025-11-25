@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Settings_VolumeStep" xml:space="preserve">
+    <value>Étape de réglage du volume</value>
+  </data>
+  <data name="Settings_OpenMixer" xml:space="preserve">
+    <value>Ouvrir le mélangeur de volume (raccourci clavier)</value>
+  </data>
+  <data name="Settings_IncreaseHotkey" xml:space="preserve">
+    <value>Augmenter le volume (raccourci clavier)</value>
+  </data>
+  <data name="Settings_DecreaseHotkey" xml:space="preserve">
+    <value>Diminuer le volume (raccourci clavier)</value>
+  </data>
+  <data name="Settings_HeaderHotkeys" xml:space="preserve">
+    <value>Raccourcis clavier (application lancée requise)</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Thème de couleur</value>
+  </data>
+  <data name="Settings_HeaderMisc" xml:space="preserve">
+    <value>Divers</value>
+  </data>
+  <data name="Settings_Lang" xml:space="preserve">
+    <value>Langue</value>
+  </data>
+  <data name="TrayMenu_SoundPanel" xml:space="preserve">
+    <value>Panneau de contrôle sonore</value>
+  </data>
+  <data name="TrayMenu_SoundSettings" xml:space="preserve">
+    <value>Paramètres de son</value>
+  </data>
+  <data name="TrayMenu_Exit" xml:space="preserve">
+    <value>Sortie</value>
+  </data>
+  <data name="TabHeader_Mixer" xml:space="preserve">
+    <value>Mélangeur de volume</value>
+  </data>
+  <data name="TabHeader_Settings" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="Settings_MusicApp" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="Error_Diff" xml:space="preserve">
+    <value>Définir différents raccourcis clavier</value>
+  </data>
+  <data name="Error_VolumeReg" xml:space="preserve">
+    <value>Échec de l'enregistrement des raccourcis clavier</value>
+  </data>
+  <data name="Error_OpenReg" xml:space="preserve">
+    <value>Échec de l'enregistrement du raccourci clavier</value>
+  </data>
+  <data name="Notification_Yes" xml:space="preserve">
+    <value>D'accord</value>
+  </data>
+  <data name="Notification_No" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="Notification_Later" xml:space="preserve">
+    <value>Plus tard</value>
+  </data>
+  <data name="NotificationMessage_Update" xml:space="preserve">
+    <value>Une mise à jour est disponible. Voulez-vous mettre à jour l'application?</value>
+  </data>
+  <data name="Error_NoDevice" xml:space="preserve">
+    <value>Aucun périphérique de sortie détecté</value>
+  </data>
+  <data name="Error_F12" xml:space="preserve">
+    <value>F12 est réservé par le système d'exploitation</value>
+  </data>
+  <data name="Error_HotkeyExists" xml:space="preserve">
+    <value>Le raccourci clavier a déjà été ajouté</value>
+  </data>
+  <data name="Settings_AddApp" xml:space="preserve">
+    <value>Ajouter une application</value>
+  </data>
+  <data name="Settings_AppsHotkeys" xml:space="preserve">
+    <value>Raccourcis clavier des applications</value>
+  </data>
+  <data name="Settings_DecreaseDevice" xml:space="preserve">
+    <value>Diminuer le volume du périphérique de sortie</value>
+  </data>
+  <data name="Settings_IncreaseDevice" xml:space="preserve">
+    <value>Augmenter le volume du périphérique de sortie</value>
+  </data>
+  <data name="Settings_RemoveApp" xml:space="preserve">
+    <value>Supprimer l'application</value>
+  </data>
+  <data name="Settings_VolumeLimit" xml:space="preserve">
+    <value>Limiter le volume de l'application lancée s'il est de 100%</value>
+  </data>
+  <data name="Settings_Tip" xml:space="preserve">
+    <value>Achetez-moi un café :)</value>
+  </data>
+  <data name="Settings_AddDevice" xml:space="preserve">
+    <value>Ajouter un appareil</value>
+  </data>
+  <data name="Settings_DefaultDeviceHotkey" xml:space="preserve">
+    <value>Définir l'appareil par défaut par raccourci clavier</value>
+  </data>
+  <data name="Settings_Device" xml:space="preserve">
+    <value>Dispositif</value>
+  </data>
+  <data name="Settings_RemoveDevice" xml:space="preserve">
+    <value>Enlevez l'appareil</value>
+  </data>
+  <data name="TrayMenu_ChangeDevice" xml:space="preserve">
+    <value>Changer l'appareil par défaut</value>
+  </data>
+  <data name="Settings_Hotkey" xml:space="preserve">
+    <value>Raccourci clavier</value>
+  </data>
+  <data name="Settings_BlockHotkeys" xml:space="preserve">
+    <value>Bloquer les raccourcis clavier enregistrés pour le système d'exploitation</value>
+  </data>
+  <data name="Settings_Duplicates" xml:space="preserve">
+    <value>Autoriser les raccourcis clavier en double</value>
+  </data>
+  <data name="Settings_MuteDevice" xml:space="preserve">
+    <value>Périphérique de sortie muet</value>
+  </data>
+  <data name="Settings_DeviceHotkeys" xml:space="preserve">
+    <value>Raccourcis clavier pour contrôler le périphérique de sortie</value>
+  </data>
+  <data name="Settings_Popup" xml:space="preserve">
+    <value>Mode fenêtre contextuelle</value>
+  </data>
+  <data name="Settings_AlwaysTop" xml:space="preserve">
+    <value>Toujours au top</value>
+  </data>
+  <data name="Status_Muted" xml:space="preserve">
+    <value>En sourdine</value>
+  </data>
+  <data name="Notifications_Header" xml:space="preserve">
+    <value>Notifications OSD </value>
+  </data>
+  <data name="Notifications_Horizontal" xml:space="preserve">
+    <value>Retrait horizontal</value>
+  </data>
+  <data name="Notifications_Position" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="Notifications_Preview" xml:space="preserve">
+    <value>Afficher un exemple de notification</value>
+  </data>
+  <data name="Notifications_Vertical" xml:space="preserve">
+    <value>Retrait vertical</value>
+  </data>
+  <data name="Notifications_Time" xml:space="preserve">
+    <value>Temps d'affichage en secondes</value>
+  </data>
+  <data name="Settings_DeviceBottom" xml:space="preserve">
+    <value>Afficher le contrôle du périphérique de sortie en bas</value>
+  </data>
+  <data name="Settings_DeviceIcon" xml:space="preserve">
+    <value>Afficher l'icône du périphérique de sortie dans la barre d'état système</value>
+  </data>
+  <data name="Settings_WindowBehavior" xml:space="preserve">
+    <value>Comportement de la fenêtre</value>
+  </data>
+  <data name="Settings_MixerSettings" xml:space="preserve">
+    <value>Paramètres du mélangeur de volume</value>
+  </data>
+  <data name="Settings_LaunchStartup" xml:space="preserve">
+    <value>Lancer l'application au démarrage du système d'exploitation</value>
+  </data>
+  <data name="Settings_StartMenu" xml:space="preserve">
+    <value>Ajouter une application au menu Démarrer</value>
+  </data>
+  <data name="Settings_ForegroundVolumeUp" xml:space="preserve">
+    <value>Augmenter le volume d'application de premier plan</value>
+  </data>
+  <data name="Settings_ForegroundVolumeDown" xml:space="preserve">
+    <value>Diminuer le volume de l'application de premier plan</value>
+  </data>
+  <data name="Settings_LastPosition" xml:space="preserve">
+    <value>Se souvenir de la dernière position</value>
+  </data>
+  <data name="Settings_AddHotkey" xml:space="preserve">
+    <value>Ajouter un raccourci clavier</value>
+  </data>
+  <data name="Settings_MediaHotkeys" xml:space="preserve">
+    <value>Raccourcis multimédias</value>
+  </data>
+  <data name="Settings_MediaReplace" xml:space="preserve">
+    <value>Touche de raccourci de remplacement</value>
+  </data>
+  <data name="Settings_RemoveHotkey" xml:space="preserve">
+    <value>Supprimer le raccourci clavier</value>
+  </data>
+  <data name="Notifications_ReactAll" xml:space="preserve">
+    <value>Affichage sur tous les changements de volume</value>
+  </data>
+</root>
