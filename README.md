@@ -13,6 +13,7 @@
 </p>
 
 This project doesn't work yet and is work in progress.
+Volume Tray aims to prevent apps from opening with 100% volume and makes managing each program's volume easier. 
 
 ## Special Thanks
 
