@@ -10,11 +10,11 @@ using log4net;
 using Microsoft.Win32;
 using Microsoft.Xaml.Behaviors.Core;
 using Notification.Wpf.Controls;
-using Volumey.Helper;
-using Volumey.DataProvider;
-using Volumey.Model;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.ViewModel.Settings
+namespace Volume-Tray-Volumey.ViewModel.Settings
 {
 	public class NotificationViewModel : INotifyPropertyChanged
 	{

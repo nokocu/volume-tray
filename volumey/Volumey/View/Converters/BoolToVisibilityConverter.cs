@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace Volumey.View.Converters
+namespace Volume-Tray-Volumey.View.Converters
 {
 	public class BoolToVisibilityConverter : IValueConverter
 	{

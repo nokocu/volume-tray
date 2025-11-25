@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Volumey.Model;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.DataProvider
+namespace Volume-Tray-Volumey.DataProvider
 {
 	public interface IScreenInfoProvider
 	{

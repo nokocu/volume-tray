@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Volumey.Controls;
+using Volume-Tray-Volumey.Controls;
 
-namespace Volumey.Helper
+namespace Volume-Tray-Volumey.Helper
 {
 	public interface IHotkeyManager : IDisposable
 	{

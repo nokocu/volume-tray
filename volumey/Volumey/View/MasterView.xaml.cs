@@ -1,4 +1,4 @@
-﻿namespace Volumey.View
+﻿namespace Volume-Tray-Volumey.View
 {
 	public partial class MasterView
 	{

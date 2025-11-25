@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Volumey.CoreAudioWrapper.CoreAudio
+namespace Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio
 {
     /// <summary>
     /// Specifies the FMTID/PID identifier that programmatically identifies a property.

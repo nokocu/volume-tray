@@ -2,7 +2,7 @@
 using Windows.Services.Store;
 using System.Threading.Tasks;
 
-namespace Volumey.Helper
+namespace Volume-Tray-Volumey.Helper
 {
 	internal static class UpdateHelper
 	{

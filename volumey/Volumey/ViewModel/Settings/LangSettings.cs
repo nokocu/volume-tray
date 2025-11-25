@@ -2,10 +2,10 @@
 using System.ComponentModel;
 using System.Globalization;
 using System.Runtime.CompilerServices;
-using Volumey.DataProvider;
-using Volumey.Localization;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Localization;
 
-namespace Volumey.ViewModel.Settings
+namespace Volume-Tray-Volumey.ViewModel.Settings
 {
 	public class LangSettings : INotifyPropertyChanged
 	{

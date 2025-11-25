@@ -1,7 +1,7 @@
 ﻿using System;
-using Volumey.Controls;
+using Volume-Tray-Volumey.Controls;
 
-namespace Volumey.Model
+namespace Volume-Tray-Volumey.Model
 {
 	[Serializable]
 	public class VolumeHotkeysPair

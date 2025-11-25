@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
     xmlns:ui="http://schemas.modernwpf.com/2019"
-    xmlns:converters="clr-namespace:Volumey.View.Converters">
+    xmlns:converters="clr-namespace:Volume-Tray-Volumey.View.Converters">
 
     <sys:Double x:Key="{x:Static ui:TitleBar.HeightKey}">22</sys:Double>
     <converters:BoolToVisibilityConverter x:Key="TitlebarVisibilityConverter"/>

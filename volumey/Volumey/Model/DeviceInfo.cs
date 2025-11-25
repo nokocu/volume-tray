@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Volumey.Model
+namespace Volume-Tray-Volumey.Model
 {
 	[Serializable]
 	public class DeviceInfo

@@ -5,7 +5,7 @@ using System.Windows.Media;
 using System.Windows.Resources;
 using log4net;
 
-namespace Volumey.View.Converters
+namespace Volume-Tray-Volumey.View.Converters
 {
 	public partial class TrayIconConverter
 	{

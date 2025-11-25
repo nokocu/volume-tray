@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Reflection;
 using Moq;
-using Volumey.CoreAudioWrapper.Wrapper;
-using Volumey.DataProvider;
-using Volumey.Model;
+using Volume-Tray-Volumey.CoreAudioWrapper.Wrapper;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Model;
 using Xunit;
 
-namespace Volumey.Tests
+namespace Volume-Tray-Volumey.Tests
 {
 	public class DeviceProviderTests
 	{

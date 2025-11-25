@@ -4,7 +4,7 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 
-namespace Volumey.Controls
+namespace Volume-Tray-Volumey.Controls
 {
 	public class VolumeSlider : Slider
 	{

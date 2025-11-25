@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Volumey.CoreAudioWrapper.Wrapper
+namespace Volume-Tray-Volumey.CoreAudioWrapper.Wrapper
 {
     //Contains external & internal guid values
     public static class GuidValue

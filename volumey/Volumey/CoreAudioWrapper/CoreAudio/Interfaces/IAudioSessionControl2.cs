@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using Volumey.CoreAudioWrapper.CoreAudio.Enums;
-using Volumey.CoreAudioWrapper.Wrapper;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Enums;
+using Volume-Tray-Volumey.CoreAudioWrapper.Wrapper;
 
-namespace Volumey.CoreAudioWrapper.CoreAudio.Interfaces
+namespace Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Interfaces
 {
     [Guid(GuidValue.External.IAudioSessionControl2), InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     public interface IAudioSessionControl2 : IAudioSessionControl

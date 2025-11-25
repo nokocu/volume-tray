@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Volumey.CoreAudioWrapper.CoreAudio
+namespace Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio
 {
     struct AUDIO_VOLUME_NOTIFICATION_DATA
     {

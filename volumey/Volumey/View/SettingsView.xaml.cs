@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using ModernWpf.Controls;
 using ModernWpf.Media.Animation;
-using Volumey.View.SettingsPage;
+using Volume-Tray-Volumey.View.SettingsPage;
 
-namespace Volumey.View
+namespace Volume-Tray-Volumey.View
 {
     public partial class SettingsView : INotifyPropertyChanged
     {

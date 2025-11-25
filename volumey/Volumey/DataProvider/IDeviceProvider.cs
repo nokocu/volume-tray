@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using Volumey.Model;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.DataProvider
+namespace Volume-Tray-Volumey.DataProvider
 {
 	public interface IDeviceProvider : IDisposable
 	{

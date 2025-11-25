@@ -2,9 +2,9 @@
 using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
-using Volumey.Model;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.View.Converters
+namespace Volume-Tray-Volumey.View.Converters
 {
 	public class DeviceIsDefaultToVisibilityPropertiesConverter : IMultiValueConverter
 	{

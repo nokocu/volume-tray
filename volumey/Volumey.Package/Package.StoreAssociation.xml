@@ -361,9 +361,9 @@
     <Language Code="zu-za" InMinimumRequirementSet="true" />
   </SupportedLocales>
   <ProductReservedInfo>
-    <MainPackageIdentityName>58593StasG.Volumey</MainPackageIdentityName>
+    <MainPackageIdentityName>58593StasG.Volume-Tray-Volumey</MainPackageIdentityName>
     <ReservedNames>
-      <ReservedName>Volumey</ReservedName>
+      <ReservedName>Volume-Tray-Volumey</ReservedName>
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames />

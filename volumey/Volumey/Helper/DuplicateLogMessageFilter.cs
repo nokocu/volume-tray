@@ -1,7 +1,7 @@
 ﻿using log4net.Core;
 using log4net.Filter;
 
-namespace Volumey.Helper
+namespace Volume-Tray-Volumey.Helper
 {
 	public class DuplicateLogMessageFilter : FilterSkeleton
 	{

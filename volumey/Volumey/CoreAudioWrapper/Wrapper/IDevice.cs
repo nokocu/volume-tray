@@ -9,14 +9,14 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Media;
 using log4net;
-using Volumey.CoreAudioWrapper.CoreAudio;
-using Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
-using Volumey.DataProvider;
-using Volumey.Helper;
-using Volumey.Localization;
-using Volumey.Model;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.Localization;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.CoreAudioWrapper.Wrapper
+namespace Volume-Tray-Volumey.CoreAudioWrapper.Wrapper
 {
 	public interface IDevice
 	{

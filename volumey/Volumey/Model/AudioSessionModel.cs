@@ -8,10 +8,10 @@ using System.Windows.Media;
 using System.Windows.Threading;
 using log4net;
 using Microsoft.Xaml.Behaviors.Core;
-using Volumey.CoreAudioWrapper.CoreAudio.Enums;
-using Volumey.CoreAudioWrapper.Wrapper;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Enums;
+using Volume-Tray-Volumey.CoreAudioWrapper.Wrapper;
 
-namespace Volumey.Model
+namespace Volume-Tray-Volumey.Model
 {
     /// <summary>
     /// Represents an audio session and the volume control of an application 

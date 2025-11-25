@@ -1,7 +1,7 @@
 ﻿using System;
-using Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
 
-namespace Volumey.CoreAudioWrapper.Wrapper
+namespace Volume-Tray-Volumey.CoreAudioWrapper.Wrapper
 {
 	public interface ISessionProvider : IAudioSessionNotification, IDisposable
 	{

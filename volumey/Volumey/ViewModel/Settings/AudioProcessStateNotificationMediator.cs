@@ -1,8 +1,8 @@
 ﻿using System.Windows;
-using Volumey.Helper;
-using Volumey.Model;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.ViewModel.Settings
+namespace Volume-Tray-Volumey.ViewModel.Settings
 {
 	public class AudioProcessStateNotificationMediator : IAudioProcessStateMediator
 	{

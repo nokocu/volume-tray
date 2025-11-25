@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Controls;
-using Volumey.Model;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.View.Controls
+namespace Volume-Tray-Volumey.View.Controls
 {
 	public partial class VolumeNotificationContent : UserControl, INotifyPropertyChanged
 	{

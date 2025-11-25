@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Windows.Input;
 
-namespace Volumey.Model
+namespace Volume-Tray-Volumey.Model
 {
 	public interface IManagedAudioSession : INotifyPropertyChanged, IDisposable
 	{

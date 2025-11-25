@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Text;
 using System.Windows.Input;
-using Volumey.Controls;
-using Volumey.DataProvider;
-using Volumey.Helper;
-using Volumey.ViewModel.Settings;
+using Volume-Tray-Volumey.Controls;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.ViewModel.Settings;
 
-namespace Volumey.Model
+namespace Volume-Tray-Volumey.Model
 {
 	[Serializable]
 	public class SystemHotkey

@@ -2,12 +2,12 @@
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using log4net;
-using Volumey.CoreAudioWrapper.CoreAudio;
-using Volumey.CoreAudioWrapper.CoreAudio.Enums;
-using Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
-using Volumey.Model;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Enums;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.CoreAudioWrapper.Wrapper
+namespace Volume-Tray-Volumey.CoreAudioWrapper.Wrapper
 {
     /// <summary>
     /// Provides notifications when an audio endpoint device is added or removed,

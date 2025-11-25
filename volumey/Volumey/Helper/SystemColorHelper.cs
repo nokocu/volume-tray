@@ -1,9 +1,9 @@
 ﻿using System;
 using log4net;
 using Microsoft.Win32;
-using Volumey.DataProvider;
+using Volume-Tray-Volumey.DataProvider;
 
-namespace Volumey.Helper
+namespace Volume-Tray-Volumey.Helper
 {
 	static class SystemColorHelper
 	{

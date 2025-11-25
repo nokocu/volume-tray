@@ -23,9 +23,9 @@
 using System;
 using System.Text;
 using System.Windows.Input;
-using Volumey.Helper;
+using Volume-Tray-Volumey.Helper;
 
-namespace Volumey.Controls
+namespace Volume-Tray-Volumey.Controls
 {
     [Serializable]
     public class HotKey : IEquatable<HotKey>

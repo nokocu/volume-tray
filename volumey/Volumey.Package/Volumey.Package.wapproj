@@ -47,7 +47,7 @@
     <AppxBundlePlatforms>x64</AppxBundlePlatforms>
     <AppxSymbolPackageEnabled>True</AppxSymbolPackageEnabled>
     <PublishTrimmed>true</PublishTrimmed>
-    <EntryPointProjectUniqueName>..\Volumey\Volumey.csproj</EntryPointProjectUniqueName>
+    <EntryPointProjectUniqueName>..\Volume-Tray-Volumey\Volume-Tray-Volumey.csproj</EntryPointProjectUniqueName>
     <PackageCertificateThumbprint>4C35C87C27DF585ADB27E931920DB86F5AC13F96</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -74,9 +74,9 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Volumey\Volumey.csproj">
+    <ProjectReference Include="..\Volume-Tray-Volumey\Volume-Tray-Volumey.csproj">
       <Project>{33547cae-0bd2-4a17-a47c-b02c58d37944}</Project>
-      <Name>Volumey</Name>
+      <Name>Volume-Tray-Volumey</Name>
       <SkipGetTargetFrameworkProperties>True</SkipGetTargetFrameworkProperties>
     </ProjectReference>
   </ItemGroup>
@@ -105,7 +105,7 @@
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-200.png" />
     <Content Include="Assets\StoreLogo.scale-400.png" />
-    <None Include="Volumey.Package_TemporaryKey.pfx" />
+    <None Include="Volume-Tray-Volumey.Package_TemporaryKey.pfx" />
     <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.targets" />

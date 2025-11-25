@@ -25,7 +25,7 @@ using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Controls;
 
-namespace Volumey.Controls
+namespace Volume-Tray-Volumey.Controls
 {
 	public class HotKeyBox : TextBox
 	{

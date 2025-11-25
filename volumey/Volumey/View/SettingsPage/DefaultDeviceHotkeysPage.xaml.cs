@@ -1,4 +1,4 @@
-﻿namespace Volumey.View.SettingsPage
+﻿namespace Volume-Tray-Volumey.View.SettingsPage
 {
 	public partial class DefaultDeviceHotkeysPage
 	{

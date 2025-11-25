@@ -2,10 +2,10 @@
 using System.Threading.Tasks;
 using System.Windows;
 using AutoUpdaterDotNET;
-using Volumey.Helper;
-using Volumey.View.DialogContent;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.View.DialogContent;
 
-namespace Volumey.View
+namespace Volume-Tray-Volumey.View
 {
 	public partial class MainView
 	{
@@ -33,7 +33,7 @@ namespace Volumey.View
 			AutoUpdater.LetUserSelectRemindLater = false;
 			AutoUpdater.RemindLaterTimeSpan = RemindLaterFormat.Days;
 			AutoUpdater.RemindLaterAt = 1;
-			await App.Current.Dispatcher.InvokeAsync(() => AutoUpdater.Start("https://raw.githubusercontent.com/G-Stas/Volumey/main/LatestUpdateInfo.xml"));
+			await App.Current.Dispatcher.InvokeAsync(() => AutoUpdater.Start("https://raw.githubusercontent.com/G-Stas/Volume-Tray-Volumey/main/LatestUpdateInfo.xml"));
 		}
 
 		private async Task CheckForStoreUpdate()

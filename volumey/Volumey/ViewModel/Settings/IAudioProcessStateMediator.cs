@@ -1,6 +1,6 @@
-﻿using Volumey.Model;
+﻿using Volume-Tray-Volumey.Model;
 
-namespace Volumey.ViewModel.Settings
+namespace Volume-Tray-Volumey.ViewModel.Settings
 {
 	public interface IAudioProcessStateMediator
 	{

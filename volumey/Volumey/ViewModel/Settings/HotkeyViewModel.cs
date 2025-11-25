@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Volumey.ViewModel.Settings
+namespace Volume-Tray-Volumey.ViewModel.Settings
 {
 	public abstract class HotkeyViewModel : INotifyPropertyChanged
 	{

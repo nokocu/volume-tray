@@ -1,6 +1,6 @@
 ﻿using System.Windows.Data;
 
-namespace Volumey.Localization
+namespace Volume-Tray-Volumey.Localization
 {
 	public class LocalizationExtension : Binding
 	{

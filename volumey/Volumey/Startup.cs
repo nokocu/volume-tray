@@ -7,9 +7,9 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using log4net;
 using log4net.Config;
-using Volumey.Helper;
+using Volume-Tray-Volumey.Helper;
 
-namespace Volumey
+namespace Volume-Tray-Volumey
 {
 	static class Startup
 	{

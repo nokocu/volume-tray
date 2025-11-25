@@ -5,8 +5,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
     <Platforms>x64</Platforms>
-    <RootNamespace>Volumey</RootNamespace>
-    <StartupObject>Volumey.Startup</StartupObject>
+    <RootNamespace>Volume-Tray-Volumey</RootNamespace>
+    <StartupObject>Volume-Tray-Volumey.Startup</StartupObject>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>Resources\Icons\icon.ico</ApplicationIcon>
     <SatelliteResourceLanguages>en</SatelliteResourceLanguages>

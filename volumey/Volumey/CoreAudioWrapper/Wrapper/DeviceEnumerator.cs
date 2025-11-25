@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using log4net;
-using Volumey.CoreAudioWrapper.CoreAudio;
-using Volumey.CoreAudioWrapper.CoreAudio.Enums;
-using Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
-using Volumey.Model;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Enums;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.CoreAudioWrapper.Wrapper
+namespace Volume-Tray-Volumey.CoreAudioWrapper.Wrapper
 {
 	public sealed class DeviceEnumerator : IDeviceEnumerator
 	{

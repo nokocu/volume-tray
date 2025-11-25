@@ -1,8 +1,8 @@
 ﻿using System;
 using log4net;
-using Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
 
-namespace Volumey.CoreAudioWrapper.Wrapper
+namespace Volume-Tray-Volumey.CoreAudioWrapper.Wrapper
 {
     /// <summary>
     /// Provides notification when an audio session is created.

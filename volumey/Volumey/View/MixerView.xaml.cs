@@ -2,7 +2,7 @@
 using System.Collections.Specialized;
 using System.Windows;
 
-namespace Volumey.View
+namespace Volume-Tray-Volumey.View
 {
 	public partial class MixerView
 	{

@@ -2,7 +2,7 @@
 using System.Windows.Media.Imaging;
 using log4net;
 
-namespace Volumey.View.Converters
+namespace Volume-Tray-Volumey.View.Converters
 {
 	public partial class TrayIconConverter
 	{

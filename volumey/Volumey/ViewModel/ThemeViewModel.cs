@@ -3,10 +3,10 @@ using System.Windows.Media;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using ModernWpf;
-using Volumey.DataProvider;
-using Volumey.Helper;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Helper;
 
-namespace Volumey.ViewModel
+namespace Volume-Tray-Volumey.ViewModel
 {
 	public sealed class ThemeViewModel : INotifyPropertyChanged
 	{

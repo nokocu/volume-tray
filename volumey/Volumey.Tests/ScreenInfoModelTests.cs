@@ -1,7 +1,7 @@
-﻿using Volumey.Model;
+﻿using Volume-Tray-Volumey.Model;
 using Xunit;
 
-namespace Volumey.Tests
+namespace Volume-Tray-Volumey.Tests
 {
 	public class ScreenInfoModelTests
 	{

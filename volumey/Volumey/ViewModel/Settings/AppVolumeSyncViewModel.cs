@@ -2,10 +2,10 @@
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using log4net;
-using Volumey.DataProvider;
-using Volumey.Model;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.ViewModel.Settings
+namespace Volume-Tray-Volumey.ViewModel.Settings
 {
 	public sealed class AppVolumeSyncViewModel : INotifyPropertyChanged
 	{

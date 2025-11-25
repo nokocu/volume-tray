@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Volumey.CoreAudioWrapper.CoreAudio
+namespace Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio
 {
 	/// <summary>
 	/// Defines the format of waveform-audio data.

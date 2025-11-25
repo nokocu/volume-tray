@@ -4,15 +4,15 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Moq;
-using Volumey.Controls;
-using Volumey.CoreAudioWrapper.Wrapper;
-using Volumey.DataProvider;
-using Volumey.Helper;
-using Volumey.Model;
-using Volumey.ViewModel.Settings;
+using Volume-Tray-Volumey.Controls;
+using Volume-Tray-Volumey.CoreAudioWrapper.Wrapper;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.Model;
+using Volume-Tray-Volumey.ViewModel.Settings;
 using Xunit;
 
-namespace Volumey.Tests
+namespace Volume-Tray-Volumey.Tests
 {
 	public class AudioProcessModelTests
 	{

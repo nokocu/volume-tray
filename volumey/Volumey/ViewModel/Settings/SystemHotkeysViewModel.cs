@@ -2,11 +2,11 @@
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Microsoft.Xaml.Behaviors.Core;
-using Volumey.Controls;
-using Volumey.DataProvider;
-using Volumey.Model;
+using Volume-Tray-Volumey.Controls;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.ViewModel.Settings
+namespace Volume-Tray-Volumey.ViewModel.Settings
 {
 	public class SystemHotkeysViewModel : HotkeyViewModel
 	{

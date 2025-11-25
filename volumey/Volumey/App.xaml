@@ -1,12 +1,12 @@
-﻿<Application x:Class="Volumey.App"
+﻿<Application x:Class="Volume-Tray-Volumey.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:vm="clr-namespace:Volumey.ViewModel"
-             xmlns:converters="clr-namespace:Volumey.View.Converters"
+             xmlns:vm="clr-namespace:Volume-Tray-Volumey.ViewModel"
+             xmlns:converters="clr-namespace:Volume-Tray-Volumey.View.Converters"
              xmlns:System="clr-namespace:System;assembly=mscorlib"
              xmlns:system="clr-namespace:System;assembly=System.Runtime"
              xmlns:ui="http://schemas.modernwpf.com/2019"
-             xmlns:local="clr-namespace:Volumey.Controls"
+             xmlns:local="clr-namespace:Volume-Tray-Volumey.Controls"
              StartupUri="View/MainView.xaml">
     <Application.Resources>
         <ResourceDictionary>

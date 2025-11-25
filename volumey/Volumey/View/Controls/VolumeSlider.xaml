@@ -3,7 +3,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:sys="clr-namespace:System;assembly=mscorlib"
     xmlns:ui="http://schemas.modernwpf.com/2019"
-    xmlns:controls="clr-namespace:Volumey.Controls">
+    xmlns:controls="clr-namespace:Volume-Tray-Volumey.Controls">
     
     <Style x:Key="DefaultToolTipStyle" TargetType="ToolTip">
         <Setter Property="OverridesDefaultStyle" Value="True" />

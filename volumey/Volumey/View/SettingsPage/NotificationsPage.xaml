@@ -1,13 +1,13 @@
-﻿<Page x:Class="Volumey.View.SettingsPage.NotificationsPage"
+﻿<Page x:Class="Volume-Tray-Volumey.View.SettingsPage.NotificationsPage"
 	  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	  xmlns:controls="http://schemas.modernwpf.com/2019"
-	  xmlns:localControls="clr-namespace:Volumey.Controls"
-	  xmlns:lc="clr-namespace:Volumey.Localization"
+	  xmlns:localControls="clr-namespace:Volume-Tray-Volumey.Controls"
+	  xmlns:lc="clr-namespace:Volume-Tray-Volumey.Localization"
 	  xmlns:behaviors="http://schemas.microsoft.com/xaml/behaviors"
-	  xmlns:converters="clr-namespace:Volumey.View.Converters"
+	  xmlns:converters="clr-namespace:Volume-Tray-Volumey.View.Converters"
 	  mc:Ignorable="d"
 	  DataContext="{Binding Source={StaticResource SettingsViewModel}, Path=NotificationsViewModel}">
 	<Page.Resources>

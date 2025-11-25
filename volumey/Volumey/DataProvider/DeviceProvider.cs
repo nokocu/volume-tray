@@ -6,10 +6,10 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Windows.Threading;
 using log4net;
-using Volumey.CoreAudioWrapper.Wrapper;
-using Volumey.Model;
+using Volume-Tray-Volumey.CoreAudioWrapper.Wrapper;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.DataProvider
+namespace Volume-Tray-Volumey.DataProvider
 {
 	/// <summary>
 	/// Provides data about active and default output devices.

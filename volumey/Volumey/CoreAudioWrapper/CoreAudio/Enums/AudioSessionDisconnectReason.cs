@@ -1,4 +1,4 @@
-﻿namespace Volumey.CoreAudioWrapper.CoreAudio.Enums
+﻿namespace Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Enums
 {
     public enum AudioSessionDisconnectReason
     {

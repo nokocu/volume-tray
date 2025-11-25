@@ -4,12 +4,12 @@ using System.Globalization;
 using System.Runtime.InteropServices;
 using System.Windows.Media;
 using log4net;
-using Volumey.CoreAudioWrapper.CoreAudio;
-using Volumey.CoreAudioWrapper.CoreAudio.Enums;
-using Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
-using Volumey.Helper;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Enums;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
+using Volume-Tray-Volumey.Helper;
 
-namespace Volumey.CoreAudioWrapper.Wrapper
+namespace Volume-Tray-Volumey.CoreAudioWrapper.Wrapper
 {
 	public sealed class MMDevice : IDevice
 	{

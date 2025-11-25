@@ -3,11 +3,11 @@ using System.Drawing;
 using System.Reflection;
 using System.Threading.Tasks;
 using Moq;
-using Volumey.CoreAudioWrapper.Wrapper;
-using Volumey.Model;
+using Volume-Tray-Volumey.CoreAudioWrapper.Wrapper;
+using Volume-Tray-Volumey.Model;
 using Xunit;
 
-namespace Volumey.Tests
+namespace Volume-Tray-Volumey.Tests
 {
     public class OutputDeviceModelTests
     {

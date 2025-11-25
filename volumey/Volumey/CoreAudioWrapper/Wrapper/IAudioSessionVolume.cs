@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Volumey.CoreAudioWrapper.Wrapper
+namespace Volume-Tray-Volumey.CoreAudioWrapper.Wrapper
 {
 	public interface IAudioSessionVolume
 	{

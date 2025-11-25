@@ -4,10 +4,10 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Microsoft.Xaml.Behaviors.Core;
-using Volumey.Helper;
-using Volumey.ViewModel.Settings;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.ViewModel.Settings;
 
-namespace Volumey.ViewModel
+namespace Volume-Tray-Volumey.ViewModel
 {
     sealed class SettingsViewModel : INotifyPropertyChanged
     {
@@ -77,7 +77,7 @@ namespace Volumey.ViewModel
             this.ForegroundWindowVolumeViewModel = new ForegroundWindowVolumeViewModel();
             this.NotificationsViewModel = new NotificationViewModel();
             this.SystemHotkeysViewModel = new SystemHotkeysViewModel();
-            this.GitHubCommand = new ActionCommand(async () => await OpenWebPage("https://github.com/G-Stas/Volumey"));
+            this.GitHubCommand = new ActionCommand(async () => await OpenWebPage("https://github.com/G-Stas/Volume-Tray-Volumey"));
             this.TipCommand = new ActionCommand(async (param) => await OpenWebPage(param as string));
 
             // this.blockHotkeysInSystem = SettingsProvider.Settings.BlockHotkeys;

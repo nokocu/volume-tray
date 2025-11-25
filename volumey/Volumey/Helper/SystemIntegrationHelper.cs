@@ -9,7 +9,7 @@ using System.Windows.Input;
 using log4net;
 using Microsoft.Win32;
 
-namespace Volumey.Helper
+namespace Volume-Tray-Volumey.Helper
 {
 	internal static class SystemIntegrationHelper
 	{
@@ -17,7 +17,7 @@ namespace Volumey.Helper
 #if(!STORE)
 
 		private static readonly string StartupRegistryPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Run";
-		private static readonly string StartupRegistryKeyName = "Volumey";
+		private static readonly string StartupRegistryKeyName = "Volume-Tray-Volumey";
 		private static readonly string StartupRegistryValue;
 		
 		static SystemIntegrationHelper()
@@ -119,7 +119,7 @@ namespace Volumey.Helper
 
 				link.SetPath(exePath);
 				IPersistFile file = (IPersistFile)link;
-				file.Save(Path.Combine(StartMenuProgramsPath, "Volumey.lnk"), false);
+				file.Save(Path.Combine(StartMenuProgramsPath, "Volume-Tray-Volumey.lnk"), false);
 				return true;
 			}
 			catch(Exception e)
@@ -133,7 +133,7 @@ namespace Volumey.Helper
 		{
 			try
 			{
-				File.Delete(Path.Combine(StartMenuProgramsPath, "Volumey.lnk"));
+				File.Delete(Path.Combine(StartMenuProgramsPath, "Volume-Tray-Volumey.lnk"));
 			}
 			catch { }
 		}
@@ -142,7 +142,7 @@ namespace Volumey.Helper
 		{
 			try
 			{
-				if(File.Exists(Path.Combine(StartMenuProgramsPath, "Volumey.lnk")))
+				if(File.Exists(Path.Combine(StartMenuProgramsPath, "Volume-Tray-Volumey.lnk")))
 				{
 					UpdateStartMenuShortcutIfExePathHasChanged();
 					return true;
@@ -162,7 +162,7 @@ namespace Volumey.Helper
 				var link = (NativeMethods.IShellLink)new NativeMethods.ShellLink();
 				IPersistFile file = (IPersistFile)link;
 				
-				file.Load(Path.Combine(StartMenuProgramsPath, "Volumey.lnk"), (int)0x00000002L);
+				file.Load(Path.Combine(StartMenuProgramsPath, "Volume-Tray-Volumey.lnk"), (int)0x00000002L);
 				StringBuilder sb = new StringBuilder(260);
 				var data = new NativeMethods.WIN32_FIND_DATA();
 				link.GetPath(sb, sb.Capacity, out data, 0x1);
@@ -173,7 +173,7 @@ namespace Volumey.Helper
 				if(!existingShortcutExePath.Equals(exePath))
 				{
 					link.SetPath(exePath);
-					file.Save(Path.Combine(StartMenuProgramsPath, "Volumey.lnk"), false);
+					file.Save(Path.Combine(StartMenuProgramsPath, "Volume-Tray-Volumey.lnk"), false);
 				}
 			}
 			catch { }

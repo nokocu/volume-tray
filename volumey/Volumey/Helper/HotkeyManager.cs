@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows.Input;
 using log4net;
-using Volumey.Controls;
+using Volume-Tray-Volumey.Controls;
 
-namespace Volumey.Helper
+namespace Volume-Tray-Volumey.Helper
 {
 	/// <summary>
 	/// Provides global hotkeys functionality by using native hotkeys functionality from Windows API.

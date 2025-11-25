@@ -1,12 +1,12 @@
 ﻿<ui:Page
-	x:Class="Volumey.View.SettingsView"
+	x:Class="Volume-Tray-Volumey.View.SettingsView"
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:ui="http://schemas.modernwpf.com/2019"
-	xmlns:converters="clr-namespace:Volumey.View.Converters"
-	xmlns:lc="clr-namespace:Volumey.Localization"
+	xmlns:converters="clr-namespace:Volume-Tray-Volumey.View.Converters"
+	xmlns:lc="clr-namespace:Volume-Tray-Volumey.Localization"
 	mc:Ignorable="d"
 	DataContext="{Binding RelativeSource={RelativeSource Self}}">
 

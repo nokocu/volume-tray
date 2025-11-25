@@ -7,11 +7,11 @@ using System.Runtime.Serialization;
 using System.Windows.Input;
 using log4net;
 using Notification.Wpf.Controls;
-using Volumey.Controls;
-using Volumey.Helper;
-using Volumey.Model;
+using Volume-Tray-Volumey.Controls;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.DataProvider
+namespace Volume-Tray-Volumey.DataProvider
 {
 	[Serializable]
 	public enum AppTheme

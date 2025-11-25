@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace Volumey.View.SettingsPage
+namespace Volume-Tray-Volumey.View.SettingsPage
 {
 	public partial class NotificationsPage : Page
 	{

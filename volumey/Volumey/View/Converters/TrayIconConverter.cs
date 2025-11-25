@@ -2,9 +2,9 @@
 using System.Drawing;
 using System.Globalization;
 using System.Windows.Data;
-using Volumey.DataProvider;
+using Volume-Tray-Volumey.DataProvider;
 
-namespace Volumey.View.Converters
+namespace Volume-Tray-Volumey.View.Converters
 {
 	public partial class TrayIconConverter : IMultiValueConverter
 	{

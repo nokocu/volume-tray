@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
-using Volumey.Controls;
+using Volume-Tray-Volumey.Controls;
 
-namespace Volumey.Helper
+namespace Volume-Tray-Volumey.Helper
 {
 	/// <summary>
 	/// Provides global hotkeys functionality by installing a low-level hook to the user keyboard.

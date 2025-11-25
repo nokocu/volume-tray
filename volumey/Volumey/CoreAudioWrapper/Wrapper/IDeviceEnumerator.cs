@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
-using Volumey.Model;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Interfaces;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.CoreAudioWrapper.Wrapper
+namespace Volume-Tray-Volumey.CoreAudioWrapper.Wrapper
 {
 	public interface IDeviceEnumerator
 	{

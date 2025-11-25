@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Microsoft.Xaml.Behaviors.Core;
 
-namespace Volumey.View.DialogContent
+namespace Volume-Tray-Volumey.View.DialogContent
 {
 	public partial class UpdateDialog
 	{

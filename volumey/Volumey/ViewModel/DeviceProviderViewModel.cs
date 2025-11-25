@@ -3,10 +3,10 @@ using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using System.Windows.Threading;
 using Microsoft.Xaml.Behaviors.Core;
-using Volumey.DataProvider;
-using Volumey.Model;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.ViewModel
+namespace Volume-Tray-Volumey.ViewModel
 {
     public class DeviceProviderViewModel : INotifyPropertyChanged
     {

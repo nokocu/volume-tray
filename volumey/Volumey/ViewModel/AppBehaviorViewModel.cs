@@ -12,12 +12,12 @@ using System.Windows.Interop;
 using log4net;
 using Microsoft.Win32;
 using Microsoft.Xaml.Behaviors.Core;
-using Volumey.DataProvider;
-using Volumey.Helper;
-using Volumey.Model;
-using Volumey.ViewModel.Settings;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.Model;
+using Volume-Tray-Volumey.ViewModel.Settings;
 
-namespace Volumey.ViewModel
+namespace Volume-Tray-Volumey.ViewModel
 {
 	public sealed class AppBehaviorViewModel : INotifyPropertyChanged
 	{

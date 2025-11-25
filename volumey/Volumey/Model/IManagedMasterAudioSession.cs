@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Media;
-using Volumey.Controls;
-using Volumey.ViewModel.Settings;
+using Volume-Tray-Volumey.Controls;
+using Volume-Tray-Volumey.ViewModel.Settings;
 
-namespace Volumey.Model
+namespace Volume-Tray-Volumey.Model
 {
 	public interface IManagedMasterAudioSession : IManagedAudioSession
 	{

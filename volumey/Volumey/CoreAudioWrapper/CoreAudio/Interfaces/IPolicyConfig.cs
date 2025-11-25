@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using Volumey.CoreAudioWrapper.CoreAudio.Enums;
-using Volumey.CoreAudioWrapper.Wrapper;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Enums;
+using Volume-Tray-Volumey.CoreAudioWrapper.Wrapper;
 
-namespace Volumey.CoreAudioWrapper.CoreAudio.Interfaces
+namespace Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Interfaces
 {
 	[Guid(GuidValue.External.IPolicyConfig), InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
 	public interface IPolicyConfig

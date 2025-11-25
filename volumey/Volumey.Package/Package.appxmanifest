@@ -8,12 +8,12 @@
         IgnorableNamespaces="uap rescap">
 
     <Identity
-            Name="58593StasG.Volumey"
+            Name="58593StasG.Volume-Tray-Volumey"
             Publisher="CN=978C2FB1-8A3A-4D5E-BC79-3F2149147466"
             Version="1.5.4.0"/>
 
     <Properties>
-        <DisplayName>Volumey</DisplayName>
+        <DisplayName>Volume-Tray-Volumey</DisplayName>
         <PublisherDisplayName>StasG</PublisherDisplayName>
         <Logo>Assets\StoreLogo.png</Logo>
     </Properties>
@@ -44,14 +44,14 @@
                     <uap5:StartupTask
                             TaskId="A86EAB47-B1CF-42FC-9DF8-FBBC90C21AA6"
                             Enabled="true"
-                            DisplayName="Volumey"/>
+                            DisplayName="Volume-Tray-Volumey"/>
                 </uap5:Extension>
             </Extensions>
             <uap:VisualElements
-                    DisplayName="Volumey"
+                    DisplayName="Volume-Tray-Volumey"
                     BackgroundColor="transparent"
                     Square150x150Logo="Assets\Square150x150Logo.png"
-                    Square44x44Logo="Assets\Square44x44Logo.png" Description="Volumey">
+                    Square44x44Logo="Assets\Square44x44Logo.png" Description="Volume-Tray-Volumey">
                 <uap:SplashScreen
                         xmlns:a="http://schemas.microsoft.com/appx/manifest/uap/windows10/5"
                         BackgroundColor="transparent"

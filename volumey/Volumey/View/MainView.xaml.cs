@@ -11,16 +11,16 @@ using System.Windows.Input;
 using System.Windows.Interop;
 using System.Windows.Navigation;
 using Hardcodet.Wpf.TaskbarNotification;
-using Volumey.Helper;
-using Volumey.ViewModel;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.ViewModel;
 using log4net;
 using ModernWpf.Controls;
 using ModernWpf.Media.Animation;
 using ModernWpf.Navigation;
-using Volumey.DataProvider;
-using Volumey.Model;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.View
+namespace Volume-Tray-Volumey.View
 {
 	public partial class MainView : INotifyPropertyChanged
 	{

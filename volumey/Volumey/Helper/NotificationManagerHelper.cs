@@ -2,12 +2,12 @@
 using log4net;
 using Notification.Wpf;
 using Notification.Wpf.Controls;
-using Volumey.DataProvider;
-using Volumey.Model;
-using Volumey.View.Controls;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Model;
+using Volume-Tray-Volumey.View.Controls;
 using Brush = System.Windows.Media.Brush;
 
-namespace Volumey.Helper
+namespace Volume-Tray-Volumey.Helper
 {
 	internal static class NotificationManagerHelper
 	{

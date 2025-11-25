@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Text;
 using log4net;
                              
-namespace Volumey
+namespace Volume-Tray-Volumey
 {
     /// <summary>
     /// Interaction logic for App.xaml

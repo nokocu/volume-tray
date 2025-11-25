@@ -3,11 +3,11 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using Volumey.Localization;
+using Volume-Tray-Volumey.Localization;
 using log4net;
-using Volumey.Controls;
+using Volume-Tray-Volumey.Controls;
 
-namespace Volumey.DataProvider
+namespace Volume-Tray-Volumey.DataProvider
 {
     public static class SettingsProvider
     {
@@ -15,7 +15,7 @@ namespace Volumey.DataProvider
         public static AppSettings.HotkeysAppSettings HotkeysSettings => Settings.HotkeysSettings;
         public static AppSettings.NotificationsAppSettings NotificationsSettings => Settings.NotificationsSettings;
 
-        private const string ConfigFolderName = "Volumey";
+        private const string ConfigFolderName = "Volume-Tray-Volumey";
         private const string ConfigFileName = "appconfig";
 
         //use LocalApplicationData path to access local app data store instead of using Windows.Storage because

@@ -1,11 +1,11 @@
-﻿<ui:Page x:Class="Volumey.View.SettingsPage.MiscPage"
+﻿<ui:Page x:Class="Volume-Tray-Volumey.View.SettingsPage.MiscPage"
 		 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 		 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 		 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-		 xmlns:lc="clr-namespace:Volumey.Localization"
+		 xmlns:lc="clr-namespace:Volume-Tray-Volumey.Localization"
 		 xmlns:ui="http://schemas.modernwpf.com/2019"
-		 xmlns:converters="clr-namespace:Volumey.View.Converters"
+		 xmlns:converters="clr-namespace:Volume-Tray-Volumey.View.Converters"
 		 DataContext="{Binding Source={StaticResource SettingsViewModel}}"
 		 mc:Ignorable="d">
 	<ui:Page.Resources>

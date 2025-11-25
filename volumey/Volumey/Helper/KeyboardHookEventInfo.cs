@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Volumey.Helper
+namespace Volume-Tray-Volumey.Helper
 {
 	/// <summary>
 	/// Contains information about a low-level keyboard input event.

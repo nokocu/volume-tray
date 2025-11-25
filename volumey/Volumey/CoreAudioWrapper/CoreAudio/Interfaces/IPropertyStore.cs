@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
-using Volumey.CoreAudioWrapper.Wrapper;
+using Volume-Tray-Volumey.CoreAudioWrapper.Wrapper;
 
-namespace Volumey.CoreAudioWrapper.CoreAudio.Interfaces
+namespace Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Interfaces
 {
     /// <summary>
     /// This interface exposes methods used to enumerate and manipulate property values.

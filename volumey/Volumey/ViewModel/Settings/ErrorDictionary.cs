@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Volumey.Localization;
+using Volume-Tray-Volumey.Localization;
 
-namespace Volumey.ViewModel.Settings
+namespace Volume-Tray-Volumey.ViewModel.Settings
 {
 	public enum ErrorMessageType { VolumeReg, Diff, OpenReg, HotkeyExists, F12, None }
 

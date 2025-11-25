@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using Volumey.CoreAudioWrapper.Wrapper;
+using Volume-Tray-Volumey.CoreAudioWrapper.Wrapper;
 
-namespace Volumey.CoreAudioWrapper.CoreAudio
+namespace Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio
 {
     /// <summary>
     /// The structure is used by the GetValue and SetValue methods of IPropertyStore

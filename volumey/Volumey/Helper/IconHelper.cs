@@ -6,7 +6,7 @@ using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
-namespace Volumey.Helper
+namespace Volume-Tray-Volumey.Helper
 {
 	static class IconHelper
 	{

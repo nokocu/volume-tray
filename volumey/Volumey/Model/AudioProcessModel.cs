@@ -11,13 +11,13 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Threading;
 using Microsoft.Xaml.Behaviors.Core;
-using Volumey.Controls;
-using Volumey.CoreAudioWrapper.Wrapper;
-using Volumey.DataProvider;
-using Volumey.Helper;
-using Volumey.ViewModel.Settings;
+using Volume-Tray-Volumey.Controls;
+using Volume-Tray-Volumey.CoreAudioWrapper.Wrapper;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.ViewModel.Settings;
 
-namespace Volumey.Model
+namespace Volume-Tray-Volumey.Model
 {
 	public class AudioProcessModel : IManagedMasterAudioSession
 	{

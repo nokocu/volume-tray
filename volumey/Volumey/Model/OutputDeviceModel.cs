@@ -9,13 +9,13 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Threading;
-using Volumey.Controls;
-using Volumey.CoreAudioWrapper.CoreAudio;
-using Volumey.CoreAudioWrapper.Wrapper;
-using Volumey.Helper;
-using Volumey.ViewModel.Settings;
+using Volume-Tray-Volumey.Controls;
+using Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio;
+using Volume-Tray-Volumey.CoreAudioWrapper.Wrapper;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.ViewModel.Settings;
 
-namespace Volumey.Model
+namespace Volume-Tray-Volumey.Model
 {
 	/// <summary>
 	/// Represents an audio output device and provides its master and application audio sessions

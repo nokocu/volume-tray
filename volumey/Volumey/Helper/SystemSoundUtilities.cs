@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using log4net;
 
-namespace Volumey.Helper
+namespace Volume-Tray-Volumey.Helper
 {
 	internal static class SystemSoundUtilities
 	{

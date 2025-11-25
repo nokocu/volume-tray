@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Input;
 
-namespace Volumey.Helper
+namespace Volume-Tray-Volumey.Helper
 {
     static class NativeMethods
     {

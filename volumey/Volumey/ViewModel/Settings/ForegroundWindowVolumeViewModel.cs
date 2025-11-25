@@ -4,13 +4,13 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using log4net;
-using Volumey.Controls;
-using Volumey.CoreAudioWrapper.Wrapper;
-using Volumey.DataProvider;
-using Volumey.Helper;
-using Volumey.Model;
+using Volume-Tray-Volumey.Controls;
+using Volume-Tray-Volumey.CoreAudioWrapper.Wrapper;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.ViewModel.Settings
+namespace Volume-Tray-Volumey.ViewModel.Settings
 {
 	public class ForegroundWindowVolumeViewModel : HotkeyViewModel
 	{

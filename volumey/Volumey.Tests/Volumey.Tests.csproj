@@ -7,7 +7,7 @@
 
     <Platforms>x86;x64</Platforms>
 
-    <RootNamespace>Volumey.Tests</RootNamespace>
+    <RootNamespace>Volume-Tray-Volumey.Tests</RootNamespace>
 
     <Configurations>Debug;Release;Store</Configurations>
   </PropertyGroup>
@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Volumey\Volumey.csproj" />
+    <ProjectReference Include="..\Volume-Tray-Volumey\Volume-Tray-Volumey.csproj" />
   </ItemGroup>
 
 </Project>

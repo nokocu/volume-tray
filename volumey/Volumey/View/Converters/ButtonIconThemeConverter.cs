@@ -2,9 +2,9 @@
 using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
-using Volumey.DataProvider;
+using Volume-Tray-Volumey.DataProvider;
 
-namespace Volumey.View.Converters
+namespace Volume-Tray-Volumey.View.Converters
 {
 	public class ButtonIconThemeConverter : IMultiValueConverter
 	{

@@ -1,11 +1,11 @@
 ﻿using System.Reflection;
 using System.Windows.Input;
-using Volumey.Controls;
-using Volumey.DataProvider;
-using Volumey.ViewModel.Settings;
+using Volume-Tray-Volumey.Controls;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.ViewModel.Settings;
 using Xunit;
 
-namespace Volumey.Tests
+namespace Volume-Tray-Volumey.Tests
 {
 	public class HotkeysValidationTests
 	{

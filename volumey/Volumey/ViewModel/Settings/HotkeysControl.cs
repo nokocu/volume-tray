@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Input;
-using Volumey.Controls;
-using Volumey.Helper;
-using Volumey.DataProvider;
+using Volume-Tray-Volumey.Controls;
+using Volume-Tray-Volumey.Helper;
+using Volume-Tray-Volumey.DataProvider;
 
-namespace Volumey.ViewModel.Settings
+namespace Volume-Tray-Volumey.ViewModel.Settings
 {
 	public static class HotkeysControl
 	{

@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using log4net;
 using Microsoft.Xaml.Behaviors.Core;
-using Volumey.Controls;
-using Volumey.DataProvider;
-using Volumey.Model;
+using Volume-Tray-Volumey.Controls;
+using Volume-Tray-Volumey.DataProvider;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.ViewModel.Settings
+namespace Volume-Tray-Volumey.ViewModel.Settings
 {
 	public sealed class AppsHotkeysViewModel : HotkeyViewModel
 	{

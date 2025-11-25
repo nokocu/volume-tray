@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Volumey.Model;
+using Volume-Tray-Volumey.Model;
 using WpfScreenHelper;
 
-namespace Volumey.DataProvider
+namespace Volume-Tray-Volumey.DataProvider
 {
 	public class ScreenInfoProvider : IScreenInfoProvider
 	{

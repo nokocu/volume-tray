@@ -2,9 +2,9 @@
 using System.ComponentModel;
 using System.Globalization;
 using System.Resources;
-using Volumey.DataProvider;
+using Volume-Tray-Volumey.DataProvider;
 
-namespace Volumey.Localization
+namespace Volume-Tray-Volumey.Localization
 {
 	public class TranslationSource : INotifyPropertyChanged
 	{

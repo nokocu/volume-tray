@@ -3,9 +3,9 @@ using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media;
 using ModernWpf.Controls;
-using Volumey.Model;
+using Volume-Tray-Volumey.Model;
 
-namespace Volumey.View.Converters
+namespace Volume-Tray-Volumey.View.Converters
 {
 	public class DeviceIsDefaultToIconConverter : IMultiValueConverter
 	{

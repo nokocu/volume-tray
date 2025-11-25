@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using ModernWpf.Controls;
 
-namespace Volumey.View.SettingsPage
+namespace Volume-Tray-Volumey.View.SettingsPage
 {
 	public partial class MiscPage
 	{

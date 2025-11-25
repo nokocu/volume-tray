@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using Volumey.CoreAudioWrapper.Wrapper;
+using Volume-Tray-Volumey.CoreAudioWrapper.Wrapper;
 
-namespace Volumey.CoreAudioWrapper.CoreAudio.Interfaces
+namespace Volume-Tray-Volumey.CoreAudioWrapper.CoreAudio.Interfaces
 {    
     [Guid(GuidValue.External.ISimpleAudioVolume), InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
     interface ISimpleAudioVolume

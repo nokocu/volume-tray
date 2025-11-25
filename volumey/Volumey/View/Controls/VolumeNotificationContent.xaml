@@ -1,11 +1,11 @@
-﻿<UserControl x:Class="Volumey.View.Controls.VolumeNotificationContent"
+﻿<UserControl x:Class="Volume-Tray-Volumey.View.Controls.VolumeNotificationContent"
 			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-			 xmlns:controls="clr-namespace:Volumey.Controls"
+			 xmlns:controls="clr-namespace:Volume-Tray-Volumey.Controls"
 			 xmlns:controls1="http://schemas.modernwpf.com/2019"
-			 xmlns:converters="clr-namespace:Volumey.View.Converters"
+			 xmlns:converters="clr-namespace:Volume-Tray-Volumey.View.Converters"
 			 mc:Ignorable="d"
 			 DataContext="{Binding RelativeSource={RelativeSource Self}}">
 	<UserControl.Resources>
