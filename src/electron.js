@@ -29,7 +29,7 @@ if (!singleInstanceLock) {
   try { Utils.handleProcessedArgs(Utils.processArgs(process.argv, app), knownDisplaysPath, settingsPath).then(() => app.exit()) } catch (e) { app.exit() }
   return false
 } else {
-  console.log("Starting Twinkle Tray...")
+  console.log("Starting Volume Tray...")
   app.on('second-instance', handleCommandLine)
 }
 
@@ -2491,7 +2491,7 @@ function createPanel(toggleOnLoad = false, isRefreshing = false, showOnLoad = tr
     skipTaskbar: true,
     resizable: false,
     type: "toolbar",
-    title: "Twinkle Tray Flyout",
+    title: "Volume Tray Flyout",
     maximizable: false,
     minimizable: false,
     webPreferences: {
@@ -3237,7 +3237,7 @@ function createTray() {
 
   const { Tray } = require('electron')
   tray = new Tray(getTrayIconPath())
-  tray.setToolTip('Twinkle Tray' + (isDev ? " (Dev)" : ""))
+  tray.setToolTip('Volume Tray' + (isDev ? " (Dev)" : ""))
   setTrayMenu()
   tray.on("click", async () => toggleTray(true))
 
@@ -3358,7 +3358,7 @@ function setTrayPercent() {
       }
       if (i > 0) {
         averagePerc = Math.floor(averagePerc / i)
-        tray.setToolTip('Twinkle Tray' + (isDev ? " (Dev)" : "") + ' (' + averagePerc + '%)')
+        tray.setToolTip('Volume Tray' + (isDev ? " (Dev)" : "") + ' (' + averagePerc + '%)')
       }
     }
   } catch (e) {
@@ -3465,7 +3465,7 @@ function showIntro() {
     frame: false,
     transparent: true,
     icon: './src/assets/logo.ico',
-    title: "Twinkle Tray",
+    title: "Volume Tray",
     webPreferences: {
       preload: path.join(__dirname, 'intro-preload.js'),
       devTools: settings.isDev,
@@ -3532,7 +3532,7 @@ function createSettings() {
     backgroundColor: "#00000000",
     frame: false,
     icon: './src/assets/logo.ico',
-    title: "Twinkle Tray Settings",
+    title: "Volume Tray Settings",
     webPreferences: {
       preload: path.join(__dirname, 'settings-preload.js'),
       devTools: settings.isDev,
@@ -4013,7 +4013,7 @@ function restartBackgroundUpdate() {
 
 
 // Idle detection
-let isUserIdle = false // Idle detection as defined by Twinkle Tray
+let isUserIdle = false // Idle detection as defined by Volume Tray
 let userIdleInterval = false // Check if idle
 let userCheckingForActiveInterval = false // Check if came back
 let userIdleDimmed = false
@@ -4393,7 +4393,7 @@ ipcMain.on('get-coordinates', getAndApplyUserCoordinates)
 /*
 
 Handle input from second process command line. One monitor argument and one brightness argument is required. Multiple arguments will override each other.
-Full example: TwinkleTray.exe --MonitorNum=1 --Offset=-30
+Full example: VolumeTray.exe --MonitorNum=1 --Offset=-30
 
 Supported args:
 

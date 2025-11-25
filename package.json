@@ -50,7 +50,7 @@
     "wmi-client": "^0.5.0"
   },
   "build": {
-    "productName": "Twinkle Tray",
+    "productName": "Volume Tray",
     "appId": "com.xanderfrangos.twinkle-tray",
     "compression": "maximum",
     "directories": {
@@ -152,9 +152,9 @@
     },
     "appx": {
       "publisherDisplayName": "Xander Frangos",
-      "applicationId": "TwinkleTray",
-      "displayName": "Twinkle Tray",
-      "identityName": "38002AlexanderFrangos.TwinkleTray",
+      "applicationId": "VolumeTray",
+      "displayName": "Volume Tray",
+      "identityName": "38002AlexanderFrangos.VolumeTray",
       "publisher": "CN=B8E9A58B-32A7-4C6C-A474-D4BE2A3CEAD8",
       "showNameOnTiles": false,
       "backgroundColor": "#6b479c",
